@@ -1,2 +1,2 @@
-Shell BASICS
-Holberton
+Shell Basics Project
+holberton
