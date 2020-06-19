@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#Displays Holberton School but in 9iteration says hi
+
 x=0
 while [ $x -le 10 ]
 do
