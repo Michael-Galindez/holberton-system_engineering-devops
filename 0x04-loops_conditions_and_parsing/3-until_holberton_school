@@ -2,7 +2,7 @@
 #Displays Holberton School
 
 Counter=0
-until [ $Counter -gt 10 ]
+until [ $Counter -gt 9 ]
 do
 	echo "Holberton School"
 	Counter=$(( Counter + 1))
