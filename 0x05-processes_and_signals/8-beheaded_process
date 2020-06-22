@@ -1,1 +1,4 @@
 #!/usr/bin/env bash
+#Kill proccess 7
+
+pkill -f "highlander" --signal SIGKILL
