@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bash script that displays active ports:
+#+ That shows the PID and name of the program
+
+sudo netstat -lp
