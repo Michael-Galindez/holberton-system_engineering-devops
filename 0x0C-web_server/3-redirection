@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Redirection
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+sudo service nginx start
+newlines="\\\trewrite ^/redirect_me https://careers.google.com/jobs/ permanent;"
+sudo sed -i "26i $newlines" /etc/nginx/sites-available/default
+sudo service nginx restart
+sudo service nginx reload
