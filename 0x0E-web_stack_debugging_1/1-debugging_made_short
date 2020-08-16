@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#same as the other one but not running status
+
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx start
+rm /run/nginx.pid
