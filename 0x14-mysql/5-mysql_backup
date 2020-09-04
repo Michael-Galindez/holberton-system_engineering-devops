@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+# create compresed dump of rachive
+password="$1"
+mysqldump -h localhost -u root -p"$password" --all-databases > backup.sql
+date=$(date +%d-%m-%y)
+file_name="$date"".tar.gz"
+tar -czvf "$file_name" backup.sql
